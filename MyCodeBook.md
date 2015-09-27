@@ -27,7 +27,6 @@ In order to have a complete data set conducted for this experiement, these two s
 
 
 The following is a description of data files provided:
-======================================
 
 <ul> 'features.txt': 
 <li> Contains 2 variables that list of all 561 features with time and frequency domain. </li>
