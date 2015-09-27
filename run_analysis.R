@@ -1,7 +1,11 @@
-#========Introduction======================================================
+#========Introduction=================================================
 #This script is written for the Getting and Cleaning Data Course Project.
-#The purpose is to 
+#The output for this script is to produce a file named "Point5_AverageOfMeasurements.txt"
+#which stores the data from Avg_BySubjectActivity data frame in the working directory
 
+#Avg_BySubjectActivity contains the independent tidy data set 
+#with the average of each variable that is a mean or standard deviation 
+#measurement for each activity and each subject. 
 
 #==================Download the necessary files=======================
 
