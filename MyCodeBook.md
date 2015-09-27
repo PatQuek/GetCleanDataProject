@@ -147,6 +147,7 @@ This script will produce a output txt file named "Point5_AverageOfMeasurements.t
 
 11) Export the final results from "Avg_BySubjectActivity" data frame into a file named"Point5_AverageOfMeasurements.txt" in the working directory.
 
+:)
 
 
 
