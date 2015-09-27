@@ -35,17 +35,16 @@ The following is a description of data files provided:
 <li> Variable 2 is the list of 561 measurements. The description of each measurements and how they are derived can be found in 'feature_info.txt'</li>
 <li> The features are normalized and bounded within [-1,1].</li>
 <li>Each feature vector is a row on the text file.</li>
-
 <li>Naming convention of the measurements as follows:
-<li> prefix 't' is to denote time. time domain signals were captured at a constant rate of 50 Hz</li>
-<li> prefix 'f' to indicate frequency domain signals. </li>
-<li> XYZ is used to denote 3-axial signals in the X, Y and Z directions.</li>
-
+	<li> prefix 't' is to denote time. time domain signals were captured at a constant rate of 50 Hz</li>
+	<li> prefix 'f' to indicate frequency domain signals. </li>
+	<li> XYZ is used to denote 3-axial signals in the X, Y and Z directions.</li>
 </li>
 </ul>
 
 <ul>
-</li>'activity_labels.txt': Contains 2 variables that list all the 6 types of activities. </li>
+'activity_labels.txt': 
+<li>Contains 2 variables that list all the 6 types of activities. </li>
 </li>Variable 1 is an index number. It is ranged from 1 to 6. </li>
 </li>Varaible 2 is the activity name: WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING </li>
 </li>Example, 1 is for WALKING, 2 is for WALKING_UPSTAIRS, etc </li>
@@ -75,7 +74,7 @@ The angular velocity vector measured by the gyroscope for each window sample. Th
 
 ## run_analysis.R
 
-###This section describes the values, data frames, output files created via running the run_analysis.R script. It also provides an overview of the steps/codes written in the R script file. Comments are also available in the R Script itself.
+This section describes the values, data frames, output files created via running the run_analysis.R script. It also provides an overview of the steps/codes written in the R script file. Comments are also available in the R Script itself.
 
 ###Values
 
@@ -89,29 +88,22 @@ In this case as provided in the Project requirements: "https://d396qusza40orc.cl
 
 <li>activity_DF: Stores the data from 'activity_labels.txt'</li>
 <li>features_DF: Stores the data from 'features.txt'</li>
-<br></br>
 
 <li>Subject_Test_DF: Stores the data from 'test/subject_train.txt'</li>
 <li>Subject_Train_DF: Stores the data from 'train/subject_train.txt'</li>
 <li>Subject_DF: Combines the data from the previous 2 data frames to get the full records of Subject for the window recorded.</li>
-<br></br>
 
 <li>X_Test_DF: Stores the data from 'test/x_test.txt'</li>
 <li>X_Train_DF: Stores the data from 'train/x_train.txt'</li>
 <li>X_DF: Combines the data from the previous 2 data frames to get the full records of data set conducted in the experiment</li>
-<br></br>
 
 <li>Y_Test_DF: Stores the data from 'test/y_test.txt'</li>
 <li>Y_Train_DF: Stores the data from 'train/y_train.txt'</li>
 <li>Y_DF: Combines the data from the previous 2 data frames to get the full records of data set conducted in the experiment</li>
-<br></br>
 
 <li>MainDF: The data frame that contains the merged data from the Subject_DF, X_DF, Y_DF data frame.</li>
-<br></br>
 
 <li>Mean_Std_DF: A subset of the data fom MainDF. The data frame that contains SubjectID, Activity, and the measurements on the mean and standard deviation for each measurement. If the variable name contains the words "mean" or "std", then it will be considered as a mean or standard deviation of a measurement.</li>
-<br></br>
-
 
 <li>Avg_BySubjectActivity: A data frame that contains the mean of each variable stored in the Mean_Std_DF data frame, and grouped by SubjectID and Activity. I.e. Each combination of Subject ID and Activity is a unique record in this data frame.</li>
 
@@ -150,12 +142,9 @@ This script will produce a output txt file named "Point5_AverageOfMeasurements.t
 :)
 
 
-
-
-=================== Foot Notes and References ========================= ========================================================================
+## Foot Notes and References
 
 License:
-========
 Use of the original dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
