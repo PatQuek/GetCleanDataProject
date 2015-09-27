@@ -74,8 +74,7 @@ The angular velocity vector measured by the gyroscope for each window sample. Th
 
 
 ## run_analysis.R
-
-###This section describes the values, data frames, output files created via running the run_analysis.R script. It also provides an overview of the steps/codes written in the R script file. Comments are also available in the R Script itself.
+This section describes the values, data frames, output files created via running the run_analysis.R script. It also provides an overview of the steps/codes written in the R script file. Comments are also available in the R Script itself.
 
 ###Values
 
@@ -151,10 +150,9 @@ This script will produce a output txt file named "Point5_AverageOfMeasurements.t
 
 
 
-=================== Foot Notes and References ========================= ========================================================================
+##Foot Notes and References
 
 License:
-========
 Use of the original dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
