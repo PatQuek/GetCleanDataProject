@@ -87,29 +87,22 @@ In this case as provided in the Project requirements: "https://d396qusza40orc.cl
 
 <li>activity_DF: Stores the data from 'activity_labels.txt'</li>
 <li>features_DF: Stores the data from 'features.txt'</li>
-<br></br>
 
 <li>Subject_Test_DF: Stores the data from 'test/subject_train.txt'</li>
 <li>Subject_Train_DF: Stores the data from 'train/subject_train.txt'</li>
 <li>Subject_DF: Combines the data from the previous 2 data frames to get the full records of Subject for the window recorded.</li>
-<br></br>
 
 <li>X_Test_DF: Stores the data from 'test/x_test.txt'</li>
 <li>X_Train_DF: Stores the data from 'train/x_train.txt'</li>
 <li>X_DF: Combines the data from the previous 2 data frames to get the full records of data set conducted in the experiment</li>
-<br></br>
 
 <li>Y_Test_DF: Stores the data from 'test/y_test.txt'</li>
 <li>Y_Train_DF: Stores the data from 'train/y_train.txt'</li>
 <li>Y_DF: Combines the data from the previous 2 data frames to get the full records of data set conducted in the experiment</li>
-<br></br>
 
 <li>MainDF: The data frame that contains the merged data from the Subject_DF, X_DF, Y_DF data frame.</li>
-<br></br>
 
 <li>Mean_Std_DF: A subset of the data fom MainDF. The data frame that contains SubjectID, Activity, and the measurements on the mean and standard deviation for each measurement. If the variable name contains the words "mean" or "std", then it will be considered as a mean or standard deviation of a measurement.</li>
-<br></br>
-
 
 <li>Avg_BySubjectActivity: A data frame that contains the mean of each variable stored in the Mean_Std_DF data frame, and grouped by SubjectID and Activity. I.e. Each combination of Subject ID and Activity is a unique record in this data frame.</li>
 
