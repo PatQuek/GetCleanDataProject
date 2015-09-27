@@ -1,6 +1,20 @@
-#Load the libraries required
-library("plyr", lib.loc="~/R/win-library/3.2")
+#========Introduction======================================================
+#This script is written for the Getting and Cleaning Data Course Project.
+#The purpose is to 
 
+
+#==================Download the necessary files=======================
+
+originalURL <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+destnURL <- "ProjectOriginalFile.zip"
+download.file(originalURL, destfile = "ProjectOriginalFile.zip")
+unzip(destnURL)
+
+
+
+
+#=======================Load the libraries required=================
+library(plyr)
 
 
 
@@ -115,6 +129,4 @@ Avg_BySubjectActivity <-
 #Export outputs
 
 #This exports the outputs
-
-write.table(Mean_Std_DF, file = "Point1To4_FullDataSets.csv", row.name = FALSE)
-write.table(Avg_BySubjectActivity, file="Point5_AverageOfMeasurements.csv",row.name = FALSE)
+write.table(Avg_BySubjectActivity, file="Point5_AverageOfMeasurements.txt",row.name = FALSE)
