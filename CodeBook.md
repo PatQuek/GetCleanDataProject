@@ -6,7 +6,7 @@ The following describes the original data sets provided for the purpose of this 
 
 In this project, the following files are included:
 
-*CodeBook.md
+* CodeBook.md
 
 * 'Readme.md'
 Describes how the codes in run_analysis.R works
